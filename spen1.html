@@ -1,0 +1,1145 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)https://alex2060.github.io/spiderman/spen1.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+
+    <meta name="description" content="">  
+
+    <style>
+        .box {
+  width: 30%;
+  height: 200px;
+  border: 5px dashed #f7a239;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+        .viewport{perspective: 700px;}
+        .camera{
+            transform-style: preserve-3d;
+            transform: rotateX(-20deg) rotateY(90deg) translate3d(200px,515px,-250px);}
+        #plane{
+            width: 300px; height: 300px; 
+            position: absolute; 
+            transform-origin: 0px 0px -600px;
+            transform: rotateX(90deg) translate3d(0px, 0px,-600px) ; 
+            background: blue;}
+        #plane2{
+            width: 300px; height: 300px; 
+            position: absolute; 
+            transform-origin: 0px 0px -600px;
+            transform: rotateX(0deg) translate3d(0px, 0px,-600px) ; 
+            background: blue;}
+        #plane3{
+            width: 300px; height: 300px; 
+            position: absolute; 
+            transform-origin: 300px -600px -300px;
+            transform: rotateY(90deg) translate3d(300px, -600px,-300px) ; 
+            background: red;}
+        #left{
+            z-index: 100000;
+            position: absolute; 
+            left: 35%;
+            top:80%;
+            width: 13%;
+            height:10%;
+        }
+        #right{
+            z-index: 100000;
+            position: absolute; 
+            left: 63%;
+            top:80%;
+            width: 13%;
+            height:10%;
+        }
+
+                #myid3{
+                    border: yellow 5px;
+        }
+        #up{
+            z-index: 100000;
+            position: absolute; 
+            left: 48%;
+            top:70%;
+            width: 15%;
+            height:10%;
+        }
+        #down{
+            z-index: 100000;
+            position: absolute; 
+            left: 48%;
+            top:90%;
+            width: 15%;
+            height:10%;
+        }
+
+        #stop{
+            z-index: 100000;
+            position: absolute; 
+            left: 48%;
+            top:80%;
+            width: 15%;
+            height:10%;
+        }
+        #z1{
+            z-index: 100000;
+            position: absolute; 
+            left: 63%;
+            top:70%;
+            width: 13%;
+            height:10%;
+        }
+        #z2{
+            z-index: 100000;
+            position: absolute; 
+            left: 35%;
+            top:70%;
+            width: 13%;
+            height:10%;
+        }
+        #rot1{
+            z-index: 100000;
+            position: absolute; 
+            left: 63%;
+            top:90%;
+            width: 13%;
+            height:10%;
+        }
+        #rot2{
+            z-index: 100000;
+            position: absolute; 
+            left: 35%;
+            top:90%;
+            width: 13%;
+            height:10%;
+        }
+
+
+        #texbox{
+            z-index: 100000;
+            position: absolute; 
+            background-color: black;
+            left: 0%;
+            top:0%;
+            width: 170px;
+            height:190px;
+        }
+
+        #texbox2{
+            z-index: 100000;
+            position: absolute; 
+            background-color: black;
+            left: 0%;
+            top:0%;
+            width: 300px;
+            height:390px;
+        }
+
+        #mode{
+            z-index: 100000;
+            position: absolute; 
+
+            left: 20%;
+            top:90%;
+            width: 15%;
+            height:10%;
+        }
+
+    </style>
+
+</head>
+<body style="background-image: url(&quot;https://openclipart.org/image/2400px/svg_to_png/4623/ryanlerch-blue-city-scene.png&quot;);" data-new-gr-c-s-check-loaded="14.1078.0" data-gr-ext-installed="">
+    <div id="credits">
+    </div>
+<div class="viewport">
+    <div id="sean" class="camera" style="transform: rotateX(0deg) rotateY(25.585deg) translate3d(10024.3px, -18101.3px, -306.1px);"><div onclick="selectDIV(&#39;338&#39;,&#39;gold&#39;,0);" id="338" style="width: 300px; height: 300px; position: absolute;transform-origin: 0px 0px 0px; transform: translate3d(-300px,0px,0px) rotateX(90deg);"> <div style="width: 300px; height: 300px; transform: scale(1, 1);">       <img style="position: absolute; top: 0px;left: 0px;" src="./spen1_files/gray.jpg" width="300" height="300">   </div></div><div onclick="selectDIV(&#39;39&#39;,&#39;gold&#39;,0);" id="39" style="width: 300px; height: 300px; position: absolute;transform-origin: 0px 0px 0px; transform: translate3d(0px,0px,0px) rotateX(90deg);"> <div style="width: 300px; height: 300px; transform: scale(1, 1);">         <img style="position: absolute; top: 0px;left: 0px;" src="./spen1_files/gray.jpg" width="300" height="300">   </div></div><div onclick="selectDIV(&#39;48&#39;,&#39;gold&#39;,0);" id="48" style="width: 300px; height: 300px; position: absolute;transform-origin: 0px 0px 0px; transform: translate3d(600px,0px,0px) rotateX(90deg);"> <div style="width: 300px; height: 300px; transform: scale(1, 1);">         <img style="position: absolute; top: 0px;left: 0px;" src="./spen1_files/gray.jpg" width="300" height="300">   </div></div><div onclick="selectDIV(&#39;49&#39;,&#39;gold&#39;,0);" id="49" style="width: 300px; height: 300px; position: absolute;transform-origin: 0px 0px 0px; transform: translate3d(300px,0px,0px) rotateX(90deg);"> <div style="width: 300px; height: 300px; transform: scale(1, 1);">         <img style="position: absolute; top: 0px;left: 0px;" src="./spen1_files/gray.jpg" width="300" height="300">   </div></div><div onclick="selectDIV(&#39;339&#39;,&#39;gold&#39;,0);" id="339" style="width: 300px; height: 300px; position: absolute;transform-origin: 0px 0px 0px; transform: translate3d(0px,0px,300px) rotateX(0deg); "> <div style="width: 300px; height: 300px; transform: scale(1, 1);">        <img style="position: absolute; top: 0px;left: 0px;" src="./spen1_files/Brick.webp" width="300" height="300">   </div></div><div onclick="selectDIV(&#39;340&#39;,&#39;gold&#39;,0);" id="340" style="width: 300px; height: 300px; position: absolute;transform-origin: 0px 0px 0px; transform: translate3d(0px,300px,300px) rotateX(0deg); "> <div style="width: 300px; height: 300px; transform: scale(1, 1);">      <img style="position: absolute; top: 0px;left: 0px;" src="./spen1_files/Brick.webp" width="300" height="300">   </div></div><div onclick="selectDIV(&#39;341&#39;,&#39;gold&#39;,0);" id="341" style="width: 300px; height: 300px; position: absolute;transform-origin: 0px 0px 0px; transform: translate3d(-300px,0px,300px) rotateX(0deg); "> <div style="width: 300px; height: 300px; transform: scale(1, 1);">         <img style="position: absolute; top: 0px;left: 0px;" src="./spen1_files/Brick.webp" width="300" height="300">   </div></div><div onclick="selectDIV(&#39;342&#39;,&#39;gold&#39;,0);" id="342" style="width: 300px; height: 300px; position: absolute;transform-origin: 0px 0px 0px; transform: translate3d(300px,0px,300px) rotateX(0deg); "> <div style="width: 300px; height: 300px; transform: scale(1, 1);">      <img style="position: absolute; top: 0px;left: 0px;" src="./spen1_files/Brick.webp" width="300" height="300">   </div></div><div onclick="selectDIV(&#39;343&#39;,&#39;gold&#39;,0);" id="343" style="width: 300px; height: 300px; position: absolute;transform-origin: 0px 0px 0px; transform: translate3d(300px,300px,300px) rotateX(0deg); "> <div style="width: 300px; height: 300px; transform: scale(1, 1);">      <img style="position: absolute; top: 0px;left: 0px;" src="./spen1_files/Brick.webp" width="300" height="300">   </div></div><div onclick="selectDIV(&#39;344&#39;,&#39;gold&#39;,0);" id="344" style="width: 300px; height: 300px; position: absolute;transform-origin: 0px 0px 0px; transform: translate3d(600px,0px,300px) rotateX(0deg); "> <div style="width: 300px; height: 300px; transform: scale(1, 1);">      <img style="position: absolute; top: 0px;left: 0px;" src="./spen1_files/Brick.webp" width="300" height="300">   </div></div><div onclick="selectDIV(&#39;345&#39;,&#39;gold&#39;,0);" id="345" style="width: 300px; height: 300px; position: absolute;transform-origin: 0px 0px 0px; transform: translate3d(600px,300px,300px) rotateX(0deg); "> <div style="width: 300px; height: 300px; transform: scale(1, 1);">      <img style="position: absolute; top: 0px;left: 0px;" src="./spen1_files/Brick.webp" width="300" height="300">   </div></div><div onclick="selectDIV(&#39;346&#39;,&#39;gold&#39;,0);" id="346" style="width: 300px; height: 300px; position: absolute;transform-origin: 0px 0px 0px; transform: translate3d(900px,600px,0px) rotateX(90deg);"> <div style="width: 300px; height: 300px; transform: scale(1, 1);">      <img style="position: absolute; top: 0px;left: 0px;" src="./spen1_files/black.jpg" width="300" height="300">   </div></div><div onclick="selectDIV(&#39;347&#39;,&#39;gold&#39;,0);" id="347" style="width: 300px; height: 300px; position: absolute;transform-origin: 0px 0px 0px; transform: translate3d(1200px,600px,0px) rotateX(90deg);"> <div style="width: 300px; height: 300px; transform: scale(1, 1);">       <img style="position: absolute; top: 0px;left: 0px;" src="./spen1_files/black.jpg" width="300" height="300">   </div></div><div onclick="selectDIV(&#39;348&#39;,&#39;gold&#39;,0);" id="348" style="width: 300px; height: 300px; position: absolute;transform-origin: 0px 0px 0px; transform: translate3d(1200px,600px,-300px) rotateX(90deg);"> <div style="width: 300px; height: 300px; transform: scale(1, 1);">      <img style="position: absolute; top: 0px;left: 0px;" src="./spen1_files/black.jpg" width="300" height="300">   </div></div><div onclick="selectDIV(&#39;349&#39;,&#39;gold&#39;,0);" id="349" style="width: 300px; height: 300px; position: absolute;transform-origin: 0px 0px 0px; transform: translate3d(1500px,300px,0px) rotateY(90deg); background: green;" "=""> <div style="width: 300px; height: 300px; transform: scale(1, 1);">      <img style="position: absolute; top: 0px;left: 0px;" src="./spen1_files/Brick.webp" width="300" height="300">   </div></div><div onclick="selectDIV(&#39;350&#39;,&#39;gold&#39;,0);" id="350" style="width: 300px; height: 300px; position: absolute;transform-origin: 0px 0px 0px; transform: translate3d(1500px,300px,300px) rotateY(90deg); background: green;" "=""> <div style="width: 300px; height: 300px; transform: scale(1, 1);">      <img style="position: absolute; top: 0px;left: 0px;" src="./spen1_files/Brick.webp" width="300" height="300">   </div></div><div onclick="selectDIV(&#39;351&#39;,&#39;gold&#39;,0);" id="351" style="width: 300px; height: 300px; position: absolute;transform-origin: 0px 0px 0px; transform: translate3d(1500px,0px,300px) rotateY(90deg); background: green;" "=""> <div style="width: 300px; height: 300px; transform: scale(1, 1);">      <img style="position: absolute; top: 0px;left: 0px;" src="./spen1_files/Brick.webp" width="300" height="300">   </div></div><div onclick="selectDIV(&#39;352&#39;,&#39;gold&#39;,0);" id="352" style="width: 300px; height: 300px; position: absolute;transform-origin: 0px 0px 0px; transform: translate3d(1500px,0px,0px) rotateY(90deg); background: green;" "=""> <div style="width: 300px; height: 300px; transform: scale(1, 1);">         <img style="position: absolute; top: 0px;left: 0px;" src="./spen1_files/Brick.webp" width="300" height="300">   </div></div><div onclick="selectDIV(&#39;357&#39;,&#39;gold&#39;,0);" id="357" style="width: 300px; height: 300px; position: absolute;transform-origin: 0px 0px 0px; transform: translate3d(1800px,0px,-300px) rotateX(90deg);"> <div style="width: 300px; height: 300px; transform: scale(1, 1);">         <img style="position: absolute; top: 0px;left: 0px;" src="./spen1_files/gray.jpg" width="300" height="300">   </div></div><div onclick="selectDIV(&#39;358&#39;,&#39;gold&#39;,0);" id="358" style="width: 300px; height: 300px; position: absolute;transform-origin: 0px 0px 0px; transform: translate3d(1500px,300px,300px) rotateX(0deg); "> <div style="width: 300px; height: 300px; transform: scale(1, 1);">        <img style="position: absolute; top: 0px;left: 0px;" src="./spen1_files/Brick.webp" width="300" height="300">   </div></div><div onclick="selectDIV(&#39;359&#39;,&#39;gold&#39;,0);" id="359" style="width: 300px; height: 300px; position: absolute;transform-origin: 0px 0px 0px; transform: translate3d(1500px,0px,300px) rotateX(0deg); "> <div style="width: 300px; height: 300px; transform: scale(1, 1);">      <img style="position: absolute; top: 0px;left: 0px;" src="./spen1_files/Brick.webp" width="300" height="300">   </div></div><div onclick="selectDIV(&#39;360&#39;,&#39;gold&#39;,0);" id="360" style="width: 300px; height: 300px; position: absolute;transform-origin: 0px 0px 0px; transform: translate3d(1500px,0px,0px) rotateX(90deg);"> <div style="width: 300px; height: 300px; transform: scale(1, 1);">      <img style="position: absolute; top: 0px;left: 0px;" src="./spen1_files/gray.jpg" width="300" height="300">   </div></div><div onclick="selectDIV(&#39;361&#39;,&#39;gold&#39;,0);" id="361" style="width: 300px; height: 300px; position: absolute;transform-origin: 0px 0px 0px; transform: translate3d(1500px,0px,-300px) rotateX(90deg);"> <div style="width: 300px; height: 300px; transform: scale(1, 1);">       <img style="position: absolute; top: 0px;left: 0px;" src="./spen1_files/gray.jpg" width="300" height="300">   </div></div><div onclick="selectDIV(&#39;362&#39;,&#39;gold&#39;,0);" id="362" style="width: 300px; height: 300px; position: absolute;transform-origin: 0px 0px 0px; transform: translate3d(900px,600px,-300px) rotateX(90deg);"> <div style="width: 300px; height: 300px; transform: scale(1, 1);">       <img style="position: absolute; top: 0px;left: 0px;" src="./spen1_files/black.jpg" width="300" height="300">   </div></div><div onclick="selectDIV(&#39;363&#39;,&#39;gold&#39;,0);" id="363" style="width: 300px; height: 300px; position: absolute;transform-origin: 0px 0px 0px; transform: translate3d(900px,600px,-600px) rotateX(90deg);"> <div style="width: 300px; height: 300px; transform: scale(1, 1);">      <img style="position: absolute; top: 0px;left: 0px;" src="./spen1_files/black.jpg" width="300" height="300">   </div></div><div onclick="selectDIV(&#39;364&#39;,&#39;gold&#39;,0);" id="364" style="width: 300px; height: 300px; position: absolute;transform-origin: 0px 0px 0px; transform: translate3d(1200px,600px,-600px) rotateX(90deg);"> <div style="width: 300px; height: 300px; transform: scale(1, 1);">      <img style="position: absolute; top: 0px;left: 0px;" src="./spen1_files/black.jpg" width="300" height="300">   </div></div><div onclick="selectDIV(&#39;365&#39;,&#39;gold&#39;,0);" id="365" style="width: 300px; height: 300px; position: absolute;transform-origin: 0px 0px 0px; transform: translate3d(1500px,600px,-600px) rotateX(90deg);"> <div style="width: 300px; height: 300px; transform: scale(1, 1);">      <img style="position: absolute; top: 0px;left: 0px;" src="./spen1_files/black.jpg" width="300" height="300">   </div></div><div onclick="selectDIV(&#39;366&#39;,&#39;gold&#39;,0);" id="366" style="width: 300px; height: 300px; position: absolute;transform-origin: 0px 0px 0px; transform: translate3d(1500px,600px,-900px) rotateX(90deg);"> <div style="width: 300px; height: 300px; transform: scale(1, 1);">      <img style="position: absolute; top: 0px;left: 0px;" src="./spen1_files/black.jpg" width="300" height="300">   </div></div><div onclick="selectDIV(&#39;367&#39;,&#39;gold&#39;,0);" id="367" style="width: 300px; height: 300px; position: absolute;transform-origin: 0px 0px 0px; transform: translate3d(1200px,600px,-900px) rotateX(90deg);"> <div style="width: 300px; height: 300px; transform: scale(1, 1);">      <img style="position: absolute; top: 0px;left: 0px;" src="./spen1_files/black.jpg" width="300" height="300">   </div></div><div onclick="selectDIV(&#39;368&#39;,&#39;gold&#39;,0);" id="368" style="width: 300px; height: 300px; position: absolute;transform-origin: 0px 0px 0px; transform: translate3d(900px,600px,-900px) rotateX(90deg);"> <div style="width: 300px; height: 300px; transform: scale(1, 1);">      <img style="position: absolute; top: 0px;left: 0px;" src="./spen1_files/black.jpg" width="300" height="300">   </div></div><div onclick="selectDIV(&#39;369&#39;,&#39;gold&#39;,0);" id="369" style="width: 300px; height: 300px; position: absolute;transform-origin: 0px 0px 0px; transform: translate3d(900px,600px,-1200px) rotateX(90deg);"> <div style="width: 300px; height: 300px; transform: scale(1, 1);">      <img style="position: absolute; top: 0px;left: 0px;" src="./spen1_files/black.jpg" width="300" height="300">   </div></div><div onclick="selectDIV(&#39;370&#39;,&#39;gold&#39;,0);" id="370" style="width: 300px; height: 300px; position: absolute;transform-origin: 0px 0px 0px; transform: translate3d(1200px,600px,-1200px) rotateX(90deg);"> <div style="width: 300px; height: 300px; transform: scale(1, 1);">      <img style="position: absolute; top: 0px;left: 0px;" src="./spen1_files/black.jpg" width="300" height="300">   </div></div><div onclick="selectDIV(&#39;371&#39;,&#39;gold&#39;,0);" id="371" style="width: 300px; height: 300px; position: absolute;transform-origin: 0px 0px 0px; transform: translate3d(1500px,600px,-1200px) rotateX(90deg);"> <div style="width: 300px; height: 300px; transform: scale(1, 1);">      <img style="position: absolute; top: 0px;left: 0px;" src="./spen1_files/black.jpg" width="300" height="300">   </div></div><div onclick="selectDIV(&#39;374&#39;,&#39;gold&#39;,0);" id="374" style="width: 300px; height: 300px; position: absolute;transform-origin: 0px 0px 0px; transform: translate3d(1800px,-300px,0px) rotateX(0deg); "> <div style="width: 300px; height: 300px; transform: scale(1, 1);">       <img style="position: absolute; top: 0px;left: 0px;" src="./spen1_files/p3.png" width="300" height="300">    <audio id="id3" src="https://alex2060.github.io/spiderman/sean2.mp3"></audio>   <button onclick="document.getElementById(&#39;id3&#39;).play()" style="position: absolute; top: 0px;left: 0px; width: 50px; height: 50px;">Play</button>  <button onclick="document.getElementById(&#39;id3&#39;).pause()" style="position: absolute; top: 0px;left: 50px; width: 50px;  height: 50px;">Stop</button>  </div></div><div onclick="selectDIV(&#39;375&#39;,&#39;gold&#39;,0);" id="375" style="width: 300px; height: 300px; position: absolute;transform-origin: 0px 0px 0px; transform: translate3d(600px,-300px,0px) rotateX(0deg); "> <div style="width: 300px; height: 300px; transform: scale(1, 1);">      <img style="position: absolute; top: 0px;left: 0px;" src="./spen1_files/p1.png" width="300" height="300">    <audio id="id1" src="https://alex2060.github.io/spiderman/sean1.mp3"></audio>   <button onclick="document.getElementById(&#39;id1&#39;).play()" style="position: absolute; top: 0px;left: 0px; width: 50px; height: 50px;">Play</button>  <button onclick="document.getElementById(&#39;id1&#39;).pause()" style="position: absolute; top: 0px;left: 50px; width: 50px;  height: 50px;">Stop</button>  </div></div><div onclick="selectDIV(&#39;376&#39;,&#39;gold&#39;,0);" id="376" style="width: 300px; height: 300px; position: absolute;transform-origin: 0px 0px 0px; transform: translate3d(2100px,0px,300px) rotateX(0deg); "> <div style="width: 300px; height: 300px; transform: scale(1, 1);">      <img style="position: absolute; top: 0px;left: 0px;" src="./spen1_files/glass.jpeg" width="300" height="300">   </div></div><div onclick="selectDIV(&#39;377&#39;,&#39;gold&#39;,0);" id="377" style="width: 300px; height: 300px; position: absolute;transform-origin: 0px 0px 0px; transform: translate3d(2100px,300px,300px) rotateX(0deg); "> <div style="width: 300px; height: 300px; transform: scale(1, 1);">      <img style="position: absolute; top: 0px;left: 0px;" src="./spen1_files/glass.jpeg" width="300" height="300">   </div></div><div onclick="selectDIV(&#39;378&#39;,&#39;gold&#39;,0);" id="378" style="width: 300px; height: 300px; position: absolute;transform-origin: 0px 0px 0px; transform: translate3d(2100px,600px,300px) rotateX(0deg); "> <div style="width: 300px; height: 300px; transform: scale(1, 1);">      <img style="position: absolute; top: 0px;left: 0px;" src="./spen1_files/glass.jpeg" width="300" height="300">   </div></div><div onclick="selectDIV(&#39;379&#39;,&#39;gold&#39;,0);" id="379" style="width: 300px; height: 300px; position: absolute;transform-origin: 0px 0px 0px; transform: translate3d(2100px,600px,300px) rotateY(90deg); background: green;" "=""> <div style="width: 300px; height: 300px; transform: scale(1, 1);">      <img style="position: absolute; top: 0px;left: 0px;" src="./spen1_files/glass.jpeg" width="300" height="300">   </div></div><div onclick="selectDIV(&#39;380&#39;,&#39;gold&#39;,0);" id="380" style="width: 300px; height: 300px; position: absolute;transform-origin: 0px 0px 0px; transform: translate3d(2100px,300px,300px) rotateY(90deg); background: green;" "=""> <div style="width: 300px; height: 300px; transform: scale(1, 1);">      <img style="position: absolute; top: 0px;left: 0px;" src="./spen1_files/glass.jpeg" width="300" height="300">   </div></div><div onclick="selectDIV(&#39;381&#39;,&#39;gold&#39;,0);" id="381" style="width: 300px; height: 300px; position: absolute;transform-origin: 0px 0px 0px; transform: translate3d(2100px,0px,300px) rotateY(90deg); background: green;" "=""> <div style="width: 300px; height: 300px; transform: scale(1, 1);">      <img style="position: absolute; top: 0px;left: 0px;" src="./spen1_files/glass.jpeg" width="300" height="300">   </div></div><div onclick="selectDIV(&#39;382&#39;,&#39;gold&#39;,0);" id="382" style="width: 300px; height: 300px; position: absolute;transform-origin: 0px 0px 0px; transform: translate3d(2100px,0px,0px) rotateX(90deg);"> <div style="width: 300px; height: 300px; transform: scale(1, 1);">      <img style="position: absolute; top: 0px;left: 0px;" src="./spen1_files/gray.jpg" width="300" height="300">   </div></div><div onclick="selectDIV(&#39;383&#39;,&#39;gold&#39;,0);" id="383" style="width: 300px; height: 300px; position: absolute;transform-origin: 0px 0px 0px; transform: translate3d(1800px,900px,0px) rotateX(90deg);"> </div><div onclick="selectDIV(&#39;384&#39;,&#39;gold&#39;,0);" id="384" style="width: 300px; height: 300px; position: absolute;transform-origin: 0px 0px 0px; transform: translate3d(1800px,900px,-300px) rotateX(90deg);"> </div><div onclick="selectDIV(&#39;385&#39;,&#39;gold&#39;,0);" id="385" style="width: 300px; height: 300px; position: absolute;transform-origin: 0px 0px 0px; transform: translate3d(2100px,900px,-300px) rotateX(90deg);"> </div><div onclick="selectDIV(&#39;386&#39;,&#39;gold&#39;,0);" id="386" style="width: 300px; height: 300px; position: absolute;transform-origin: 0px 0px 0px; transform: translate3d(1800px,900px,-600px) rotateX(90deg);"> </div><div onclick="selectDIV(&#39;387&#39;,&#39;gold&#39;,0);" id="387" style="width: 300px; height: 300px; position: absolute;transform-origin: 0px 0px 0px; transform: translate3d(2100px,900px,-600px) rotateX(90deg);"> <div style="width: 300px; height: 300px; transform: scale(1, 1);">        <img style="position: absolute; top: 0px;left: 0px;" src="./spen1_files/black.jpg" width="300" height="300">   </div></div><div onclick="selectDIV(&#39;388&#39;,&#39;gold&#39;,0);" id="388" style="width: 300px; height: 300px; position: absolute;transform-origin: 0px 0px 0px; transform: translate3d(2100px,-300px,0px) rotateX(0deg); "> <div style="width: 300px; height: 300px; transform: scale(1, 1);">       <img style="position: absolute; top: 0px;left: 0px;" src="./spen1_files/p4.png" width="300" height="300">    <audio id="id4" src="https://alex2060.github.io/spiderman/sean4.mp3"></audio>   <button onclick="document.getElementById(&#39;id4&#39;).play()" style="position: absolute; top: 0px;left: 0px; width: 50px; height: 50px;">Play</button>  <button onclick="document.getElementById(&#39;id4&#39;).pause()" style="position: absolute; top: 0px;left: 50px; width: 50px;  height: 50px;">Stop</button>       <h1 style="position: absolute; top: 200px;left: 0px;">      <a href="https://www.w3schools.com/html/html_links.asp">Click Here </a>  </h1></div></div><div onclick="selectDIV(&#39;389&#39;,&#39;gold&#39;,0);" id="389" style="width: 300px; height: 300px; position: absolute;transform-origin: 0px 0px 0px; transform: translate3d(1800px,600px,0px) rotateX(90deg);"> <div style="width: 300px; height: 300px; transform: scale(1, 1);">        <img style="position: absolute; top: 0px;left: 0px;" src="./spen1_files/black.jpg" width="300" height="300">   </div></div><div onclick="selectDIV(&#39;390&#39;,&#39;gold&#39;,0);" id="390" style="width: 300px; height: 300px; position: absolute;transform-origin: 0px 0px 0px; transform: translate3d(1800px,600px,300px) rotateX(90deg);"> <div style="width: 300px; height: 300px; transform: scale(1, 1);">       <img style="position: absolute; top: 0px;left: 0px;" src="./spen1_files/black.jpg" width="300" height="300">   </div></div><div onclick="selectDIV(&#39;391&#39;,&#39;gold&#39;,0);" id="391" style="width: 300px; height: 300px; position: absolute;transform-origin: 0px 0px 0px; transform: translate3d(1500px,600px,300px) rotateX(90deg);"> <div style="width: 300px; height: 300px; transform: scale(1, 1);">       <img style="position: absolute; top: 0px;left: 0px;" src="./spen1_files/black.jpg" width="300" height="300">   </div></div><div onclick="selectDIV(&#39;392&#39;,&#39;gold&#39;,0);" id="392" style="width: 300px; height: 300px; position: absolute;transform-origin: 0px 0px 0px; transform: translate3d(2100px,600px,300px) rotateX(90deg);"> <div style="width: 300px; height: 300px; transform: scale(1, 1);">       <img style="position: absolute; top: 0px;left: 0px;" src="./spen1_files/black.jpg" width="300" height="300">   </div></div><div onclick="selectDIV(&#39;393&#39;,&#39;gold&#39;,0);" id="393" style="width: 300px; height: 300px; position: absolute;transform-origin: 0px 0px 0px; transform: translate3d(1200px,600px,300px) rotateX(90deg);"> <div style="width: 300px; height: 300px; transform: scale(1, 1);">       <img style="position: absolute; top: 0px;left: 0px;" src="./spen1_files/black.jpg" width="300" height="300">   </div></div><div onclick="selectDIV(&#39;394&#39;,&#39;gold&#39;,0);" id="394" style="width: 300px; height: 300px; position: absolute;transform-origin: 0px 0px 0px; transform: translate3d(1200px,0px,0px) rotateX(0deg); "> <div style="width: 300px; height: 300px; transform: scale(1, 1);">       <img style="position: absolute; top: 0px;left: 0px;" src="./spen1_files/p2.png" width="300" height="300">    <audio id="id2" src="https://alex2060.github.io/spiderman/sean2.mp3"></audio>   </div></div><div onclick="selectDIV(&#39;player1&#39;,&#39;black&#39;,0);" id="player1" style="width: 100px; height: 100px; position: absolute; transform-origin: 0px 0px 0px; transform: translate3d(-9724.3px, 18516.3px, 106.1px) rotateY(-45deg);">  <img src="./spen1_files/spidey_jump.png" id="play" alt="X+" width="100%" height="100%"> </div></div>
+</div>
+    <div id="left" onclick="UIchange(&#39;z-&#39;);">
+        <img id="idL" src="./spen1_files/back.png" alt="X+" width="100%" height="100%">
+    </div>
+    <div id="right" onclick="UIchange(&#39;z+&#39;);">
+        <img id="idR" src="./spen1_files/forward.png" alt="X+" width="100%" height="100%">
+    </div>
+    <div id="up" onclick="UIchange(&#39;y-&#39;);">
+        <img id="idU" src="./spen1_files/spidey_jump.png" alt="X+" width="100%" height="100%"></div>
+    <div id="down" onclick="UIchange(&#39;y+&#39;);">
+        <img id="idD" src="https://alex2060.github.io/spiderman/spen1.html" alt="X+" width="100%" height="100%">
+    </div>
+    <div id="stop" onclick="UIchange(&#39;none&#39;);">
+        
+        <img id="idR" src="https://eunicesd.github.io/demo_2/spidey_PAUSE_button.png" alt="X+" width="100%" height="200%x">
+    </div>
+    <div id="z1" onclick="UIchange(&#39;x-&#39;);">
+        <img id="idLD" src="./spen1_files/right.png" alt="X-" width="100%" height="100%"> 
+    </div>
+    <div id="z2" onclick="UIchange(&#39;x+&#39;);">
+        <img id="idRD" src="./spen1_files/left.png" alt="X+" width="100%" height="100%">
+    </div>
+
+
+    <div id="rot1" onclick="UIchange(&#39;r+&#39;);">
+<img id="idLU" src="./spen1_files/rotateright.png" alt="X+" width="100%" height="100%">
+    </div>
+    <div id="rot2" onclick="UIchange(&#39;r-&#39;);">
+<img id="idRU" src="./spen1_files/rotateleft.png" alt="X+" width="100%" height="100%">
+   
+    </div>
+
+    <div id="texbox" onclick="" style="visibility: hidden;">
+            <label for="fname" style="color: white;">ID</label><br>
+            <input type="text" id="boxID" name="fname"><br>
+            <label for="fname" style="color: white;">HTML</label><br>
+            <input type="text" id="HTML" name="fname"><br>
+            <label for="fname" style="color: white;">IFRAM</label><br>
+            <input type="text" id="IFRam" name="fname"><br>
+            <button onclick="addHTML()">Change</button><button onclick="ONHTML()">ON HTMl</button><br>
+            <button onclick="offHTML()">OFF HTML</button>
+            <button onclick="DELL()">DELL</button><br>
+            <button onclick="MaptoJSON();">MAKEJSON</button><br>
+            <button onclick="SaveMaptoJSON();">Save_MAP</button><br>
+    </div>
+
+
+    <div id="texbox2" onclick="" style="visibility: hidden;">
+            <label for="fname" style="color: white;">AU1</label>
+            <input type="text" id="AU1" name="fname"><br>
+            <label for="fname" style="color: white;">AD1</label>
+            <input type="text" id="AD1" name="fname"><br>
+            <label for="fname" style="color: white;">AL1</label>
+            <input type="text" id="AL1" name="fname"><br>
+            <label for="fname" style="color: white;">AR1</label>
+            <input type="text" id="AR1" name="fname"><br>
+            <label for="fname" style="color: white;">ARD</label>
+            <input type="text" id="ARD1" name="fname"><br>
+            <label for="fname" style="color: white;">ALD</label>
+            <input type="text" id="ALD1" name="fname"><br>
+
+            <label for="fname" style="color: white;">ALU</label>
+            <input type="text" id="ALU1" name="fname"><br>
+
+            <label for="fname" style="color: white;">ARU</label>
+            <input type="text" id="ARU1" name="fname"><br>
+
+            <label for="fname" style="color: white;">CR1</label>
+            <input type="text" id="CR1" name="fname"><br>
+
+
+            <label for="fname" style="color: white;">CR2</label>
+            <input type="text" id="CR2" name="fname"><br>
+
+            <label for="fname" style="color: white;">CL1</label>
+            <input type="text" id="CL1" name="fname"><br>
+
+
+            <label for="fname" style="color: white;">CL2</label>
+            <input type="text" id="CL2" name="fname"><br>
+
+
+            <label for="fname" style="color: white;">CJ1</label>
+            <input type="text" id="CJ1" name="fname"><br>
+            
+            <label for="fname" style="color: white;">CS1</label>
+            <input type="text" id="CS1" name="fname"><br>
+
+
+            <label for="fname" style="color: white;">CS2</label>
+            <input type="text" id="CS2" name="fname"><br>
+
+            <label for="fname" style="color: white;">mod</label>
+            <input type="text" id="modeid" name="fname"><br>
+
+            <label for="fname" style="color: white;">BGI</label>
+            <input type="text" id="BGID" name="fname"><br>
+
+
+
+
+            <button onclick="changemap()">change map</button>
+    </div>
+
+    <div id="mode" onclick="">
+
+<img id="modeimg" alt="X+" width="0px" height="0px" src="./spen1_files/c.png">
+
+    </div>
+<script type="text/javascript">
+UIchange("none");
+function offHTML(){
+    mytext="";
+    for (let i = 0; i < array_spaces.length; i++) {
+      mytext += addspaceNoHTML(array_spaces[i]);
+    }
+    document.getElementById("sean").innerHTML=mytext;
+}
+
+function ONHTML(){
+    document.getElementById("sean").innerHTML=get_space();
+}
+
+function delletDiv(div) {
+
+    newarray=[];
+    for (let i = 0; i < array_spaces.length; i++) {
+        if (array_spaces[i][0]!=div) {
+            newarray.push(array_spaces[i]);
+        };
+    }
+    return newarray;
+}
+
+function DELL(){
+    array_spaces=delletDiv(document.getElementById("boxID").value);
+    ONHTML();
+}
+
+
+
+function addspaceNoHTML(array) {
+    if (array[4]==0) {
+        string="<div onclick=\"selectDIV('"+array[0]+"','gold',0);\" id=\""+array[0]+"\" style=\"width: 300px; height: 300px; position: absolute;transform-origin: 0px 0px 0px; transform: translate3d("+array[1]*300+"px,"+array[2]*300+"px,"+array[3]*300+"px) rotateX(90deg); \"   > ";
+    }
+    if (array[4]==1) {
+       string="<div onclick=\"selectDIV('"+array[0]+"','gold',0);\" id=\""+array[0]+"\" style=\"width: 300px; height: 300px; position: absolute;transform-origin: 0px 0px 0px; transform: translate3d("+(array[1]*300)+"px,"+(array[2]*300-300)+"px,"+array[3]*300+"px) rotateX(0deg); \"  > ";
+    }
+
+    if (array[4]==2) {
+       string="<div onclick=\"selectDIV('"+array[0]+"','gold',0);\" id=\""+array[0]+"\" style=\"width: 300px; height: 300px; position: absolute;transform-origin: 0px 0px 0px; transform: translate3d("+(array[1]*300+300)+"px,"+(array[2]*300-300)+"px,"+(array[3]*300+300)+"px) rotateY(90deg); background: green;\" \"> ";
+    }
+    string+="</div>";
+    return string;
+}
+
+
+function addHTML() {
+    for (let i = 0; i < array_spaces.length; i++) {
+        if (array_spaces[i][0]==document.getElementById("boxID").value){
+            if (document.getElementById("HTML").value!=""){
+                array_spaces[i][5]=document.getElementById("HTML").value;
+            }
+            else{
+            array_spaces[i][5]="<iframe width=\"100%\" height=\"100%\" src=\""+document.getElementById("IFRam").value+"\" title=\"\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>";
+            }
+        }
+    }
+    document.getElementById("sean").innerHTML=get_space();
+}
+
+function UIchange(argument) {
+
+    if (mode==0){
+        direction=argument;
+        if (direction=='y+'){
+            direction='y-';
+
+        }
+        else{
+            if (direction=='y-'){
+                direction='y+';
+
+            }
+        }
+    }
+    if (mode==1) {
+        if (argument=='y+') {
+            adedvalue[1]=adedvalue[1]+1;
+            holdingvlaue=-1;
+            doAddStuff();
+        };
+        if (argument=='y-') {
+            adedvalue[1]=adedvalue[1]-1;
+            holdingvlaue=-1;
+            doAddStuff();
+        };
+        if (argument=='x+') {
+            adedvalue[0]=adedvalue[0]-1;
+            holdingvlaue=-1;
+            doAddStuff();
+        };
+        if (argument=='x-') {
+            adedvalue[0]=adedvalue[0]+1;
+            holdingvlaue=-1;
+            doAddStuff();
+        };
+
+        if (argument=='z-') {
+            adedvalue[2]=adedvalue[2]-1;
+            holdingvlaue=-1;
+            doAddStuff();
+        };
+        if (argument=='z+') {
+            adedvalue[2]=adedvalue[2]+1;
+            holdingvlaue=-1;
+            doAddStuff();
+        };
+
+        if (argument=='r-') {
+            adedvalue[3]=(adedvalue[3]-1)%3;
+            holdingvlaue=-1;
+            doAddStuff();
+        };
+        if (argument=='r+') {
+            adedvalue[3]=(adedvalue[3]+1)%3;
+            holdingvlaue=-1;
+            doAddStuff();
+        };
+        if (argument=='none') {
+
+            thisval=getNewID_For_div();
+            val = get_spot_by_pos(adedvalue);
+            if (val==-1){
+                array_spaces.push([thisval,adedvalue[0],adedvalue[1],adedvalue[2],adedvalue[3],"","Ifram"]);
+                document.getElementById("sean").innerHTML=get_space();
+            }
+        };
+    };
+    if (mode==2){
+        if (argument=='y-') {
+            jump();
+            return;
+        }
+        if (argument=='y+') {
+            fall();
+            return;
+        }
+        direction=argument;
+    }
+    if (mode==3){
+    }
+}
+
+
+function doAddStuff() {
+        offHTML();
+        val = get_spot_by_pos(adedvalue);
+        if (val==-1){
+            document.getElementById("sean").innerHTML+=addspace(['hold_div',adedvalue[0],adedvalue[1],adedvalue[2],adedvalue[3],"",""]);selectDIV('hold_div','black',1);
+        }
+        else{selectDIV(val,'gold',1);}
+}
+
+function getimgs() {
+        AU=document.getElementById("AU1").value;
+        AD=document.getElementById("AD1").value;
+        AL=document.getElementById("AL1").value;
+        AR=document.getElementById("AR1").value;
+        ALU=document.getElementById("ALU1").value;
+        ALD=document.getElementById("ALD1").value;
+
+        ARU=document.getElementById("ARU1").value;
+
+        ARD=document.getElementById("ARD1").value;
+        FR1=document.getElementById("CR1").value;
+        FR2=document.getElementById("CR2").value;
+        FJ=document.getElementById("CJ1").value;
+        FL1=document.getElementById("CL1").value;
+        FL2=document.getElementById("CL2").value;
+        F1S=document.getElementById("CS1").value;
+        F2S=document.getElementById("CS2").value;
+
+        BG1=document.getElementById("BGID").value;
+        modeimgV=document.getElementById("modeid").value;
+
+    myaddtomap=F1S+"(???A???)"+F2S+"(???A???)"+FJ+"(???A???)"+FL1+"(???A???)"+FL2 +"(???A???)"+ FR1+"(???A???)"+FR2+"(???A???)"+AU+"(???A???)"+AD+"(???A???)"+AL+"(???A???)"+ AR+"(???A???)"+ALU+"(???A???)"+ARU+"(???A???)"+ALD+"(???A???)"+ARD+"(???A???)"+modeimgV+"(???A???)"+BG1;
+
+}
+
+function changemap() {
+
+        AU=document.getElementById("AU1").value;
+        AD=document.getElementById("AD1").value;
+        AL=document.getElementById("AL1").value;
+        AR=document.getElementById("AR1").value;
+        ALU=document.getElementById("ALU1").value;
+        ALD=document.getElementById("ALD1").value;
+
+        ARU=document.getElementById("ARU1").value;
+
+        ARD=document.getElementById("ARD1").value;
+        FR1=document.getElementById("CR1").value;
+        FR2=document.getElementById("CR2").value;
+        FJ=document.getElementById("CJ1").value;
+        FL1=document.getElementById("CL1").value;
+        FL2=document.getElementById("CL2").value;
+        F1S=document.getElementById("CS1").value;
+        F2S=document.getElementById("CS2").value;
+
+        F1S=document.getElementById("CS1").value;
+        F2S=document.getElementById("CS2").value;
+
+        BG1=document.getElementById("BGID").value;
+        modeimgV=document.getElementById("modeid").value;
+        document.body.style.backgroundImage = "url('"+BG1+"')";
+
+    document.getElementById("idU").src=AU;
+    document.getElementById("idD").src=AD;
+    document.getElementById("idL").src=AL;
+    document.getElementById("idR").src=AR;
+    document.getElementById("idLU").src=ALU;
+    document.getElementById("idRU").src=ARU;
+    document.getElementById("idLD").src=ALD;
+    document.getElementById("idRD").src=ARD;
+
+    document.getElementById("modeimg").src=modeimgV;
+
+
+
+    myaddtomap=F1S+"(???A???)"+F2S+"(???A???)"+FJ+"(???A???)"+FL1+"(???A???)"+FL2 +"(???A???)"+ FR1+"(???A???)"+FR2+"(???A???)"+AU+"(???A???)"+AD+"(???A???)"+AL+"(???A???)"+ AR+"(???A???)"+ALU+"(???A???)"+ARU+"(???A???)"+ALD+"(???A???)"+ARD+"(???A???)"+modeimgV+"(???A???)"+BG1;
+
+
+}
+myaddtomap="";
+
+function  modechange() {
+    mode=(mode+1)%4;
+    if (mode==0) {
+
+        document.getElementById("sean").innerHTML=get_space();
+        document.getElementById("texbox").style.visibility="";
+                document.getElementById("texbox2").style.visibility="hidden";
+    };
+    if (mode==1) {
+        valueold=[0,0,0,3];
+        adedvalue=[Math.floor(-camerax/300)+1,Math.floor(-cameray/300)+2,Math.floor(-cameraz/300),0];
+        holdingvlaue=-1;
+        doAddStuff();
+        document.getElementById("texbox").style.visibility="hidden";
+                document.getElementById("texbox2").style.visibility="hidden";
+    };
+    if (mode==2){
+        document.getElementById("sean").innerHTML=get_space();
+        document.getElementById("texbox").style.visibility="hidden";
+        document.getElementById("texbox2").style.visibility="hidden";
+    }
+    if (mode==3){
+        document.getElementById("sean").innerHTML=get_space();
+        document.getElementById("texbox").style.visibility="hidden";
+        document.getElementById("texbox2").style.visibility="";
+        document.getElementById("AU1").value=AU;
+        document.getElementById("AD1").value=AD;
+        document.getElementById("AL1").value=AL;
+        document.getElementById("AR1").value=AR;
+        document.getElementById("ALU1").value=ALU;
+        document.getElementById("ALD1").value=ALD;
+        document.getElementById("ARU1").value=ARU;
+        document.getElementById("ARD1").value=ARD;
+        document.getElementById("CR1").value=FR1;
+        document.getElementById("CR2").value=FR2;
+        document.getElementById("CJ1").value=FJ;
+        document.getElementById("CL1").value=FL1;
+        document.getElementById("CL2").value=FL2;
+        document.getElementById("CS1").value=F1S;
+        document.getElementById("CS2").value=F2S;
+
+        document.getElementById("BGID").value=BG1;
+        document.getElementById("modeid").value=modeimgV;
+    }
+}
+
+oldid="";
+
+function selectDIV(id,number,themode) {
+    if (themode!=mode) {
+        return;
+    };
+    try {
+    document.getElementById(oldid).style.boxShadow="inset 0px 0px 0px 0px gold";
+    }
+    catch (error) {
+    }
+    if (mode==0 || mode==1) {
+        try {
+    document.getElementById(id).style.boxShadow="inset 0px 0px 0px 10px "+number;//boxID
+document.getElementById("boxID").value=id;
+        }catch (error) {}
+    };
+    oldid=id;
+}
+
+var camerax=200;
+var cameray=515;
+var cameraz=-250;
+var newcamerax=200;
+var newcameray=515;
+var newcameraz=-250;
+var rotx=0;
+var roty=30;
+var speed = 0.1;
+var direction="none";
+document.getElementsByClassName("camera")[0].style.transform = "rotateX("+rotx+"deg) rotateY("+roty+"deg) translate3d("+camerax+"px,"+cameray+"px,"+cameraz+"px)";
+function  moveforward(direction,speed){
+    timenow= Date.now();
+    distrance = (timenow-lastmovetime)*speed;
+    if (direction=="none") {lastmovetime = timenow; return;}
+    if (direction=="x+"){camerax+=distrance;}
+    if (direction=="x-"){camerax-=distrance;}
+    if (direction=="y+"){cameray+=distrance;}
+    if (direction=="y-"){cameray-=distrance;}
+    if (direction=="z-"){cameraz+=distrance;}
+    if (direction=="z+"){cameraz-=distrance;}
+    if (direction=="r-"){roty-=distrance/20;}
+    if (direction=="r+"){roty+=distrance/20;}
+    if (roty>=40) {roty=40;}
+    if (roty<=20) {roty=20;}
+    document.getElementsByClassName("camera")[0].style.transform = "rotateX("+rotx+"deg) rotateY("+roty+"deg) translate3d("+camerax+"px,"+cameray+"px,"+cameraz+"px)";
+     lastmovetime = timenow;
+    return;
+}
+
+
+
+function addspace(array) {
+    if (array[4]==0) {
+        string="<div onclick=\"selectDIV('"+array[0]+"','gold',0);\" id=\""+array[0]+"\" style=\"width: 300px; height: 300px; position: absolute;transform-origin: 0px 0px 0px; transform: translate3d("+array[1]*300+"px,"+array[2]*300+"px,"+array[3]*300+"px) rotateX(90deg);\"   > ";
+    }
+    if (array[4]==1) {
+       string="<div onclick=\"selectDIV('"+array[0]+"','gold',0);\" id=\""+array[0]+"\" style=\"width: 300px; height: 300px; position: absolute;transform-origin: 0px 0px 0px; transform: translate3d("+(array[1]*300)+"px,"+(array[2]*300-300)+"px,"+array[3]*300+"px) rotateX(0deg); \"  > ";
+    }
+
+    if (array[4]==2) {
+       string="<div onclick=\"selectDIV('"+array[0]+"','gold',0);\" id=\""+array[0]+"\" style=\"width: 300px; height: 300px; position: absolute;transform-origin: 0px 0px 0px; transform: translate3d("+(array[1]*300+300)+"px,"+(array[2]*300-300)+"px,"+(array[3]*300+300)+"px) rotateY(90deg); background: green;\" \"> ";
+    }
+    string+=array[5];
+    string+="</div>";
+    return string;
+}
+
+selected="this";
+var array_spaces= [
+['1',0,0,0,0,"thisisit","Ifram"],
+['2',0,0,0,1,"","Ifram"],
+['3',0,0,0,2,"","Ifram"],
+['4',1,-1,0,0,"","Ifram"],
+['5',0,0,1,0,"","Ifram"],
+['6',1,0,1,0,"","Ifram"],
+['7',1,0,1,1,"","Ifram"],
+];
+json='';
+
+
+F1S="";
+F2S="";
+FJ="";
+
+FL1="";
+FL2="";
+
+FR1="";
+FR2="";
+
+AU="";
+
+BG1="";
+modeimgV="";
+
+function getMAPformID(){
+
+//post_responce("http://localhost:8000/doit?key=d707e9248cf67fa9c4fb84b5f2c05afb4865fb8c2c0a0c6681773fde18c254a8&action_type=get_post&usekkey=" ,changetomap,"varible")
+changetomap('',"A")
+
+}
+
+function changetomap(A,B){
+
+    //val = JSON.parse(A);
+    //console.log(val);
+    //mymaptext=val["text"];
+    alert("A");
+    mymaptext=A;
+
+
+    mymaptext=mymaptext.replaceAll('(___P___)', '"');
+    mymaptext=mymaptext.replaceAll('(___F___)','/');
+    mymaptext=mymaptext.replaceAll('(___B___)','\\');
+    mymaptext=mymaptext.replaceAll('(___C___)',':');
+    mymaptext=mymaptext.replaceAll('(___E___)','=');
+    mymaptext=mymaptext.replaceAll('(___S___)',' ');
+    mymaptext=mymaptext.replaceAll('(___2___)','<');
+    mymaptext=mymaptext.replaceAll('(___1___)','>');
+        mymaptext=mymaptext.replaceAll('|','?');
+     mymaptext=mymaptext.replaceAll('(___I___)','|');
+
+    mymaptext=mymaptext.replaceAll('(___A___)','&');
+    json=mymaptext;
+    console.log("myjon");
+    console.log(json);
+    JSONtoMap(json)
+    //alert(A)
+
+}
+
+//getMAPformID();
+JSONtoMap("")
+function JSONtoMap(json){
+
+    json='338(???M???)-1(???M???)0(???M???)0(???M???)0(???M???)<div style="width: 300px; height: 300px; transform: scale(1, 1);">       <img style="position: absolute; top: 0px;left: 0px;" src="https://alex2060.github.io/spiderman/gray.jpg" width="300" height="300">   </div>(???M???)Ifram(???M???)39(???M???)0(???M???)0(???M???)0(???M???)0(???M???)<div style="width: 300px; height: 300px; transform: scale(1, 1);">         <img style="position: absolute; top: 0px;left: 0px;" src="https://alex2060.github.io/spiderman/gray.jpg" width="300" height="300">   </div>(???M???)Ifram(???M???)48(???M???)2(???M???)0(???M???)0(???M???)0(???M???)<div style="width: 300px; height: 300px; transform: scale(1, 1);">         <img style="position: absolute; top: 0px;left: 0px;" src="https://alex2060.github.io/spiderman/gray.jpg" width="300" height="300">   </div>(???M???)Ifram(???M???)49(???M???)1(???M???)0(???M???)0(???M???)0(???M???)<div style="width: 300px; height: 300px; transform: scale(1, 1);">         <img style="position: absolute; top: 0px;left: 0px;" src="https://alex2060.github.io/spiderman/gray.jpg" width="300" height="300">   </div>(???M???)Ifram(???M???)339(???M???)0(???M???)1(???M???)1(???M???)1(???M???)<div style="width: 300px; height: 300px; transform: scale(1, 1);">        <img style="position: absolute; top: 0px;left: 0px;" src="https://alex2060.github.io/spiderman/Brick.webp" width="300" height="300">   </div>(???M???)Ifram(???M???)340(???M???)0(???M???)2(???M???)1(???M???)1(???M???)<div style="width: 300px; height: 300px; transform: scale(1, 1);">      <img style="position: absolute; top: 0px;left: 0px;" src="https://alex2060.github.io/spiderman/Brick.webp" width="300" height="300">   </div>(???M???)Ifram(???M???)341(???M???)-1(???M???)1(???M???)1(???M???)1(???M???)<div style="width: 300px; height: 300px; transform: scale(1, 1);">         <img style="position: absolute; top: 0px;left: 0px;" src="https://alex2060.github.io/spiderman/Brick.webp" width="300" height="300">   </div>(???M???)Ifram(???M???)342(???M???)1(???M???)1(???M???)1(???M???)1(???M???)<div style="width: 300px; height: 300px; transform: scale(1, 1);">      <img style="position: absolute; top: 0px;left: 0px;" src="https://alex2060.github.io/spiderman/Brick.webp" width="300" height="300">   </div>(???M???)Ifram(???M???)343(???M???)1(???M???)2(???M???)1(???M???)1(???M???)<div style="width: 300px; height: 300px; transform: scale(1, 1);">      <img style="position: absolute; top: 0px;left: 0px;" src="https://alex2060.github.io/spiderman/Brick.webp" width="300" height="300">   </div>(???M???)Ifram(???M???)344(???M???)2(???M???)1(???M???)1(???M???)1(???M???)<div style="width: 300px; height: 300px; transform: scale(1, 1);">      <img style="position: absolute; top: 0px;left: 0px;" src="https://alex2060.github.io/spiderman/Brick.webp" width="300" height="300">   </div>(???M???)Ifram(???M???)345(???M???)2(???M???)2(???M???)1(???M???)1(???M???)<div style="width: 300px; height: 300px; transform: scale(1, 1);">      <img style="position: absolute; top: 0px;left: 0px;" src="https://alex2060.github.io/spiderman/Brick.webp" width="300" height="300">   </div>(???M???)Ifram(???M???)346(???M???)3(???M???)2(???M???)0(???M???)0(???M???)<div style="width: 300px; height: 300px; transform: scale(1, 1);">      <img style="position: absolute; top: 0px;left: 0px;" src="https://alex2060.github.io/spiderman/black.jpg" width="300" height="300">   </div>(???M???)Ifram(???M???)347(???M???)4(???M???)2(???M???)0(???M???)0(???M???)<div style="width: 300px; height: 300px; transform: scale(1, 1);">       <img style="position: absolute; top: 0px;left: 0px;" src="https://alex2060.github.io/spiderman/black.jpg" width="300" height="300">   </div>(???M???)Ifram(???M???)348(???M???)4(???M???)2(???M???)-1(???M???)0(???M???)<div style="width: 300px; height: 300px; transform: scale(1, 1);">      <img style="position: absolute; top: 0px;left: 0px;" src="https://alex2060.github.io/spiderman/black.jpg" width="300" height="300">   </div>(???M???)Ifram(???M???)349(???M???)4(???M???)2(???M???)-1(???M???)2(???M???)<div style="width: 300px; height: 300px; transform: scale(1, 1);">      <img style="position: absolute; top: 0px;left: 0px;" src="https://alex2060.github.io/spiderman/Brick.webp" width="300" height="300">   </div>(???M???)Ifram(???M???)350(???M???)4(???M???)2(???M???)0(???M???)2(???M???)<div style="width: 300px; height: 300px; transform: scale(1, 1);">      <img style="position: absolute; top: 0px;left: 0px;" src="https://alex2060.github.io/spiderman/Brick.webp" width="300" height="300">   </div>(???M???)Ifram(???M???)351(???M???)4(???M???)1(???M???)0(???M???)2(???M???)<div style="width: 300px; height: 300px; transform: scale(1, 1);">      <img style="position: absolute; top: 0px;left: 0px;" src="https://alex2060.github.io/spiderman/Brick.webp" width="300" height="300">   </div>(???M???)Ifram(???M???)352(???M???)4(???M???)1(???M???)-1(???M???)2(???M???)<div style="width: 300px; height: 300px; transform: scale(1, 1);">         <img style="position: absolute; top: 0px;left: 0px;" src="https://alex2060.github.io/spiderman/Brick.webp" width="300" height="300">   </div>(???M???)Ifram(???M???)357(???M???)6(???M???)0(???M???)-1(???M???)0(???M???)<div style="width: 300px; height: 300px; transform: scale(1, 1);">         <img style="position: absolute; top: 0px;left: 0px;" src="https://alex2060.github.io/spiderman/gray.jpg" width="300" height="300">   </div>(???M???)Ifram(???M???)358(???M???)5(???M???)2(???M???)1(???M???)1(???M???)<div style="width: 300px; height: 300px; transform: scale(1, 1);">        <img style="position: absolute; top: 0px;left: 0px;" src="https://alex2060.github.io/spiderman/Brick.webp" width="300" height="300">   </div>(???M???)Ifram(???M???)359(???M???)5(???M???)1(???M???)1(???M???)1(???M???)<div style="width: 300px; height: 300px; transform: scale(1, 1);">      <img style="position: absolute; top: 0px;left: 0px;" src="https://alex2060.github.io/spiderman/Brick.webp" width="300" height="300">   </div>(???M???)Ifram(???M???)360(???M???)5(???M???)0(???M???)0(???M???)0(???M???)<div style="width: 300px; height: 300px; transform: scale(1, 1);">      <img style="position: absolute; top: 0px;left: 0px;" src="https://alex2060.github.io/spiderman/gray.jpg" width="300" height="300">   </div>(???M???)Ifram(???M???)361(???M???)5(???M???)0(???M???)-1(???M???)0(???M???)<div style="width: 300px; height: 300px; transform: scale(1, 1);">       <img style="position: absolute; top: 0px;left: 0px;" src="https://alex2060.github.io/spiderman/gray.jpg" width="300" height="300">   </div>(???M???)Ifram(???M???)362(???M???)3(???M???)2(???M???)-1(???M???)0(???M???)<div style="width: 300px; height: 300px; transform: scale(1, 1);">       <img style="position: absolute; top: 0px;left: 0px;" src="https://alex2060.github.io/spiderman/black.jpg" width="300" height="300">   </div>(???M???)Ifram(???M???)363(???M???)3(???M???)2(???M???)-2(???M???)0(???M???)<div style="width: 300px; height: 300px; transform: scale(1, 1);">      <img style="position: absolute; top: 0px;left: 0px;" src="https://alex2060.github.io/spiderman/black.jpg" width="300" height="300">   </div>(???M???)Ifram(???M???)364(???M???)4(???M???)2(???M???)-2(???M???)0(???M???)<div style="width: 300px; height: 300px; transform: scale(1, 1);">      <img style="position: absolute; top: 0px;left: 0px;" src="https://alex2060.github.io/spiderman/black.jpg" width="300" height="300">   </div>(???M???)Ifram(???M???)365(???M???)5(???M???)2(???M???)-2(???M???)0(???M???)<div style="width: 300px; height: 300px; transform: scale(1, 1);">      <img style="position: absolute; top: 0px;left: 0px;" src="https://alex2060.github.io/spiderman/black.jpg" width="300" height="300">   </div>(???M???)Ifram(???M???)366(???M???)5(???M???)2(???M???)-3(???M???)0(???M???)<div style="width: 300px; height: 300px; transform: scale(1, 1);">      <img style="position: absolute; top: 0px;left: 0px;" src="https://alex2060.github.io/spiderman/black.jpg" width="300" height="300">   </div>(???M???)Ifram(???M???)367(???M???)4(???M???)2(???M???)-3(???M???)0(???M???)<div style="width: 300px; height: 300px; transform: scale(1, 1);">      <img style="position: absolute; top: 0px;left: 0px;" src="https://alex2060.github.io/spiderman/black.jpg" width="300" height="300">   </div>(???M???)Ifram(???M???)368(???M???)3(???M???)2(???M???)-3(???M???)0(???M???)<div style="width: 300px; height: 300px; transform: scale(1, 1);">      <img style="position: absolute; top: 0px;left: 0px;" src="https://alex2060.github.io/spiderman/black.jpg" width="300" height="300">   </div>(???M???)Ifram(???M???)369(???M???)3(???M???)2(???M???)-4(???M???)0(???M???)<div style="width: 300px; height: 300px; transform: scale(1, 1);">      <img style="position: absolute; top: 0px;left: 0px;" src="https://alex2060.github.io/spiderman/black.jpg" width="300" height="300">   </div>(???M???)Ifram(???M???)370(???M???)4(???M???)2(???M???)-4(???M???)0(???M???)<div style="width: 300px; height: 300px; transform: scale(1, 1);">      <img style="position: absolute; top: 0px;left: 0px;" src="https://alex2060.github.io/spiderman/black.jpg" width="300" height="300">   </div>(???M???)Ifram(???M???)371(???M???)5(???M???)2(???M???)-4(???M???)0(???M???)<div style="width: 300px; height: 300px; transform: scale(1, 1);">      <img style="position: absolute; top: 0px;left: 0px;" src="https://alex2060.github.io/spiderman/black.jpg" width="300" height="300">   </div>(???M???)Ifram(???M???)374(???M???)6(???M???)0(???M???)0(???M???)1(???M???)<div style="width: 300px; height: 300px; transform: scale(1, 1);">       <img style="position: absolute; top: 0px;left: 0px;" src="https://alex2060.github.io/spiderman/p3.png" width="300" height="300">    <audio id="id3" src="https://alex2060.github.io/spiderman/sean2.mp3"></audio>   <button onClick="document.getElementById(\'id3\').play()" style="position: absolute; top: 0px;left: 0px; width: 50px; height: 50px;">Play</button>  <button onClick="document.getElementById(\'id3\').pause()" style="position: absolute; top: 0px;left: 50px; width: 50px;  height: 50px;">Stop</button>  </div>(???M???)Ifram(???M???)375(???M???)2(???M???)0(???M???)0(???M???)1(???M???)<div style="width: 300px; height: 300px; transform: scale(1, 1);">      <img style="position: absolute; top: 0px;left: 0px;" src="https://alex2060.github.io/spiderman/p1.png" width="300" height="300">    <audio id="id1" src="https://alex2060.github.io/spiderman/sean1.mp3"></audio>   <button onClick="document.getElementById(\'id1\').play()" style="position: absolute; top: 0px;left: 0px; width: 50px; height: 50px;">Play</button>  <button onClick="document.getElementById(\'id1\').pause()" style="position: absolute; top: 0px;left: 50px; width: 50px;  height: 50px;">Stop</button>  </div>(???M???)Ifram(???M???)376(???M???)7(???M???)1(???M???)1(???M???)1(???M???)<div style="width: 300px; height: 300px; transform: scale(1, 1);">      <img style="position: absolute; top: 0px;left: 0px;" src="https://alex2060.github.io/spiderman/glass.jpeg" width="300" height="300">   </div>(???M???)Ifram(???M???)377(???M???)7(???M???)2(???M???)1(???M???)1(???M???)<div style="width: 300px; height: 300px; transform: scale(1, 1);">      <img style="position: absolute; top: 0px;left: 0px;" src="https://alex2060.github.io/spiderman/glass.jpeg" width="300" height="300">   </div>(???M???)Ifram(???M???)378(???M???)7(???M???)3(???M???)1(???M???)1(???M???)<div style="width: 300px; height: 300px; transform: scale(1, 1);">      <img style="position: absolute; top: 0px;left: 0px;" src="https://alex2060.github.io/spiderman/glass.jpeg" width="300" height="300">   </div>(???M???)Ifram(???M???)379(???M???)6(???M???)3(???M???)0(???M???)2(???M???)<div style="width: 300px; height: 300px; transform: scale(1, 1);">      <img style="position: absolute; top: 0px;left: 0px;" src="https://alex2060.github.io/spiderman/glass.jpeg" width="300" height="300">   </div>(???M???)Ifram(???M???)380(???M???)6(???M???)2(???M???)0(???M???)2(???M???)<div style="width: 300px; height: 300px; transform: scale(1, 1);">      <img style="position: absolute; top: 0px;left: 0px;" src="https://alex2060.github.io/spiderman/glass.jpeg" width="300" height="300">   </div>(???M???)Ifram(???M???)381(???M???)6(???M???)1(???M???)0(???M???)2(???M???)<div style="width: 300px; height: 300px; transform: scale(1, 1);">      <img style="position: absolute; top: 0px;left: 0px;" src="https://alex2060.github.io/spiderman/glass.jpeg" width="300" height="300">   </div>(???M???)Ifram(???M???)382(???M???)7(???M???)0(???M???)0(???M???)0(???M???)<div style="width: 300px; height: 300px; transform: scale(1, 1);">      <img style="position: absolute; top: 0px;left: 0px;" src="https://alex2060.github.io/spiderman/gray.jpg" width="300" height="300">   </div>(???M???)Ifram(???M???)383(???M???)6(???M???)3(???M???)0(???M???)0(???M???)(???M???)Ifram(???M???)384(???M???)6(???M???)3(???M???)-1(???M???)0(???M???)(???M???)Ifram(???M???)385(???M???)7(???M???)3(???M???)-1(???M???)0(???M???)(???M???)Ifram(???M???)386(???M???)6(???M???)3(???M???)-2(???M???)0(???M???)(???M???)Ifram(???M???)387(???M???)7(???M???)3(???M???)-2(???M???)0(???M???)<div style="width: 300px; height: 300px; transform: scale(1, 1);">        <img style="position: absolute; top: 0px;left: 0px;" src="https://alex2060.github.io/spiderman/black.jpg" width="300" height="300">   </div>(???M???)Ifram(???M???)388(???M???)7(???M???)0(???M???)0(???M???)1(???M???)<div style="width: 300px; height: 300px; transform: scale(1, 1);">       <img style="position: absolute; top: 0px;left: 0px;" src="https://alex2060.github.io/spiderman/p4.png" width="300" height="300">    <audio id="id4" src="https://alex2060.github.io/spiderman/sean4.mp3"></audio>   <button onClick="document.getElementById(\'id4\').play()" style="position: absolute; top: 0px;left: 0px; width: 50px; height: 50px;">Play</button>  <button onClick="document.getElementById(\'id4\').pause()" style="position: absolute; top: 0px;left: 50px; width: 50px;  height: 50px;">Stop</button>       <h1 style="position: absolute; top: 200px;left: 0px;">      <a href="https://www.w3schools.com/html/html_links.asp">Click Here </a>  </div>(???M???)Ifram(???M???)389(???M???)6(???M???)2(???M???)0(???M???)0(???M???)<div style="width: 300px; height: 300px; transform: scale(1, 1);">        <img style="position: absolute; top: 0px;left: 0px;" src="https://alex2060.github.io/spiderman/black.jpg" width="300" height="300">   </div>(???M???)Ifram(???M???)390(???M???)6(???M???)2(???M???)1(???M???)0(???M???)<div style="width: 300px; height: 300px; transform: scale(1, 1);">       <img style="position: absolute; top: 0px;left: 0px;" src="https://alex2060.github.io/spiderman/black.jpg" width="300" height="300">   </div>(???M???)Ifram(???M???)391(???M???)5(???M???)2(???M???)1(???M???)0(???M???)<div style="width: 300px; height: 300px; transform: scale(1, 1);">       <img style="position: absolute; top: 0px;left: 0px;" src="https://alex2060.github.io/spiderman/black.jpg" width="300" height="300">   </div>(???M???)Ifram(???M???)392(???M???)7(???M???)2(???M???)1(???M???)0(???M???)<div style="width: 300px; height: 300px; transform: scale(1, 1);">       <img style="position: absolute; top: 0px;left: 0px;" src="https://alex2060.github.io/spiderman/black.jpg" width="300" height="300">   </div>(???M???)Ifram(???M???)393(???M???)4(???M???)2(???M???)1(???M???)0(???M???)<div style="width: 300px; height: 300px; transform: scale(1, 1);">       <img style="position: absolute; top: 0px;left: 0px;" src="https://alex2060.github.io/spiderman/black.jpg" width="300" height="300">   </div>(???M???)Ifram(???M???)394(???M???)4(???M???)1(???M???)0(???M???)1(???M???)<div style="width: 300px; height: 300px; transform: scale(1, 1);">       <img style="position: absolute; top: 0px;left: 0px;" src="https://alex2060.github.io/spiderman/p2.png" width="300" height="300">    <audio id="id2" src="https://alex2060.github.io/spiderman/sean2.mp3"></audio>   </div>(???M???)Ifram(???M???)https://alex2060.github.io/spiderman/spidey_left1.png(???A???)https://alex2060.github.io/spiderman/spidey_left1.png(???A???)https://alex2060.github.io/spiderman/spidey_jump.png(???A???)https://alex2060.github.io/spiderman/spidey_right1.png(???A???)https://alex2060.github.io/spiderman/spidey_right2.png(???A???)https://alex2060.github.io/spiderman/spidey_left1.png(???A???)https://alex2060.github.io/spiderman/spidey_left2.png(???A???)https://eunicesd.github.io/demo_2/spidey_JUMP_button.png(???A???)(???A???)https://eunicesd.github.io/demo_2/spidey_DOWN_button.png(???A???)https://eunicesd.github.io/demo_2/spidey_UP_button.png(???A???)https://eunicesd.github.io/demo_2/spidey_ROTATE%20RIGHT_button.png(???A???)https://eunicesd.github.io/demo_2/spidey_ROTATE%20LEFT_button.png(???A???)https://eunicesd.github.io/demo_2/spidey_LEFT_button.png(???A???)https://eunicesd.github.io/demo_2/spidey_RIGHT_button.png(???A???)https://i.ibb.co/phLFzFZ/c.png(???A???)https://openclipart.org/image/2400px/svg_to_png/4623/ryanlerch-blue-city-scene.png';
+
+    console.log("jsoninmap")
+    console.log(json)
+    myarray=json.split("(???M???)");
+
+
+    console.log(myarray);
+    for (let i = 0; i < (myarray.length/7)-1; i++) {
+        array_spaces.push([myarray[i*7+0],myarray[i*7+1],myarray[i*7+2],myarray[i*7+3],myarray[i*7+4],myarray[i*7+5],myarray[i*7+6]]);
+    }
+
+    values = myarray[myarray.length-1].split("(???A???)");
+    F1S = values[0];
+    F2S = values[1];
+    FJ=values[2];
+    FL1=values[3];
+    FL2=values[4];
+    FR1=values[5];
+    FR2=values[6];
+    AU=values[7];
+    document.getElementById("idU").src=AU;
+    AD=values[8];
+    document.getElementById("idD").src=AD;
+    AL=values[10];
+    document.getElementById("idL").src=AL;
+    AR=values[9];
+    document.getElementById("idR").src=AR;
+    ALU=values[11];
+    document.getElementById("idLU").src=ALU;
+    ARU=values[12];
+    document.getElementById("idRU").src=ARU;
+    ARD=values[13];
+    document.getElementById("idRD").src=ARD;
+    ALD=values[14];
+    document.getElementById("idLD").src=ALD;
+    modeimgV=values[15];
+    console.log(values);
+    document.getElementById("modeimg").src=modeimgV;
+
+    BG1=values[16];
+
+    document.body.style.backgroundImage = "url('"+BG1+"')";
+    console.log(values);
+    modechange();
+    modechange();
+    modechange();
+    modechange();
+
+    mytext=get_space();
+    console.log("getspaces");
+    console.log(mytext)
+    console.log("outhere")
+
+    document.getElementById("sean").innerHTML=mytext;
+    setInterval(function(){ update(); },1);
+    setInterval(function(){ changephoto() } ,500 );
+    array_spaces=delletDiv("3")
+
+    array_spaces=delletDiv("6")
+    array_spaces=delletDiv("5")
+    array_spaces=delletDiv("7")
+    array_spaces=delletDiv("4")
+    array_spaces=delletDiv("2")
+    array_spaces=delletDiv("1")
+
+    
+}
+
+
+
+
+//JSONtoMap(json);
+
+var lastmovetime = Date.now();
+selected=[0,0,0];
+
+oldselect=[0,0,0];
+
+
+function MaptoJSON(){
+    jsontext="";
+    mytext="";
+    for (let i = 0; i < array_spaces.length; i++) {
+
+    for (let k = 0; k < array_spaces[i].length; k++) {
+        jsontext += array_spaces[i][k]+"(???M???)";
+      };
+    }
+    jsontext.replace('"', '\\\"')
+
+    mymaptext=jsontext;
+
+    getimgs();
+    mymaptext+=myaddtomap;
+
+
+
+    myadd = mymaptext;
+
+    document.getElementById("HTML").value=myadd;
+
+
+
+}
+function post_responce(path,func,varible){
+    fetch(path).then(
+    ( response) => {
+    return response.text();
+    })
+    .then((html) => {
+    func( html.trim() , varible )
+    });
+}
+//post_responce("comand",funtion,"var")
+
+function SaveMaptoJSON(){
+    jsontext="";
+    mytext="";
+    for (let i = 0; i < array_spaces.length; i++) {
+
+    for (let k = 0; k < array_spaces[i].length; k++) {
+        jsontext += array_spaces[i][k]+"(???M???)";
+      };
+    }
+    jsontext.replace('"', '\\\"')
+
+    mymaptext=jsontext;
+
+    getimgs();
+    mymaptext+=myaddtomap;
+
+    mymaptext=mymaptext.replaceAll('"', '(___P___)');
+    mymaptext=mymaptext.replaceAll('/', '(___F___)');
+    mymaptext=mymaptext.replaceAll('\\','(___B___)');
+    mymaptext=mymaptext.replaceAll(':', '(___C___)');
+    mymaptext=mymaptext.replaceAll('=', '(___E___)');
+    mymaptext=mymaptext.replaceAll(' ', '(___S___)');
+    mymaptext=mymaptext.replaceAll('<', '(___2___)');
+    mymaptext=mymaptext.replaceAll('>', '(___1___)');
+     mymaptext=mymaptext.replaceAll('|', '(___I___)');
+    mymaptext=mymaptext.replaceAll('?', '|');
+    mymaptext=mymaptext.replaceAll('&', '(___A___)');
+
+    myadd = mymaptext;
+
+
+
+
+    //u1_mygameqjveaeaqcxsewfrsnsgw
+    //post_responce("http://localhost:8000/doit?user=&action_type=add_post&password=&text="+myadd ,postmap,"")
+
+
+
+}
+function postmap(A,B){
+console.log(A);
+
+value = JSON.parse(A);
+document.getElementById("HTML").value="http://localhost:8000/doit?action_type=makepage&usertemplate_name=u1_mygameqjveaeaqcxsewfrsnsgw&var1=&rep=&setion="+value['id']
+
+value['id'];
+
+}
+
+
+mytext="";
+
+var playerposx=0;
+var playerposy=0;
+var playerposz=0;
+
+
+
+function get_space(){
+    mytext="";
+    for (let i = 0; i < array_spaces.length; i++) {
+      mytext += addspace(array_spaces[i]);
+    }
+    return mytext+addplayer();
+}
+mydata = "";
+
+mytext=get_space();
+document.getElementById("sean").innerHTML+=mytext;
+
+
+
+function get_spot_by_pos(spot) {
+    for (let i = 0; i < array_spaces.length; i++) {
+        if (array_spaces[i][1]==spot[0] && array_spaces[i][2]==spot[1] && array_spaces[i][3]==spot[2] && array_spaces[i][4]==spot[3]){
+            return array_spaces[i][0];
+        }
+      
+    }
+    return -1;
+}
+mode=1;
+valueold=[0,0,0,3];
+adedvalue=[-1,0,0,0];
+holdingvlaue=-1;
+function getNewID_For_div() {
+    maxvalue=-100;
+    for (let i = 0; i < array_spaces.length; i++) {
+        try {
+            if (maxvalue <= parseInt(array_spaces[i][0])){
+                maxvalue=parseInt(array_spaces[i][0]);
+            }
+        }catch (error) {}
+    }
+    maxvalue++;
+    return maxvalue;
+}
+
+
+
+var playerz=0;
+var playery=0;
+var playerx=0;
+
+var newplayerz=0;
+var newplayery=0;
+var newplayerx=0;
+function addplayer(argument) {
+
+    return "<div onclick=\"selectDIV('player1','black',0);\" id=\"player1\" style=\"width: 100px; height: 100px; position: absolute;transform-origin: 0px 0px 0px; transform: translate3d("+(playerx+100)+"px, "+(playery-100)+"px, "+(playerz+50)+"px) rotateY(-45deg) rotateX(0deg); \"   >  <img src=\""+F1S+"\" id=\"play\" alt=\"X+\" width=\"100%\" height=\"100%\"> </div>";
+}
+//
+
+function update() {
+    if (mode==0) {
+        moveforward(direction,speed);
+    };
+
+    if (mode==2){
+        //console.log("in here now");
+        moveplayer(direction,speed);
+
+    }
+}
+var jumper = 0;
+var falling = 0;
+function jump() {
+    jumper=30;
+}
+
+function fall() {
+    // emote;
+
+}
+
+animation_counter = 0;
+maxwalk =2;
+maxleft=2;
+maxjumpleft=1;
+maxjumpright=1;
+const d = new Date();
+
+haschaged = false;
+mydir="";
+anicounter=0;
+
+function changephoto() {
+anicounter+=1;
+
+    if (landed==false) {
+        document.getElementById("play").src=FJ;
+        return;
+
+    };
+    if (mydir=="none") {
+        if (anicounter%2==0){
+         document.getElementById("play").src=F1S;
+         }   
+         else{
+            document.getElementById("play").src=F2S;
+
+         }
+         return;
+    }
+
+
+
+    if ("z-"==mydir) {
+        if (anicounter%2==0){
+         document.getElementById("play").src=FL1;
+         }   
+         else{
+            document.getElementById("play").src=FL2;
+         }
+         return;
+
+    };
+
+    if ("z+"==mydir) {
+        if (anicounter%2==0){
+         document.getElementById("play").src=FR2;
+         }   
+         else{
+            document.getElementById("play").src=FR1;
+         }
+         return;
+
+    };
+
+
+    if ("x+"==mydir) {
+        if (anicounter%2==0){
+         document.getElementById("play").src=FL1;
+         }   
+         else{
+            document.getElementById("play").src=FL2;
+         }
+         return;
+
+    };
+
+    if ("x-"==mydir) {
+        if (anicounter%2==0){
+         document.getElementById("play").src=FR2;
+         }   
+         else{
+            document.getElementById("play").src=FR1;
+         }
+         return;
+
+    };
+
+
+
+
+
+}
+
+function moveplayer(direction,speed) {
+    //console.log("in here no2");
+    mydir=direction;
+
+
+
+    timenow= Date.now();
+    distrance = (timenow-lastmovetime)*speed;
+    newplayerz=playerz;
+    newplayery=playery;
+    newplayerx=newplayerx;
+
+    newcameraz=cameraz;
+    newcameray=cameray;
+    newcamerax=camerax;
+    if (direction=="none") {lastmovetime = timenow;}
+    if (direction=="x+"){newcamerax+=distrance; newplayerx-=distrance;}
+    if (direction=="x-"){newcamerax-=distrance; newplayerx+=distrance;}
+    if (direction=="z-"){newcameraz+=distrance; newplayerz-=distrance;}
+    if (direction=="z+"){newcameraz-=distrance; newplayerz+=distrance;}
+    if (direction=="r-"){roty-=distrance/20;}
+    if (direction=="r+"){roty+=distrance/20;}
+    if (roty>=40) {roty=40;}
+    if (roty<=20) {roty=20;}
+if (jumper>=-20){
+    jumper+=-distrance/10;
+}
+
+
+newcameray+=distrance*jumper/10;
+newplayery+=-distrance*jumper/10;
+
+
+
+//falling
+onserface(distrance);
+
+
+
+
+
+//playery=newplayery;
+//physics
+
+    document.getElementsByClassName("camera")[0].style.transform = "rotateX("+rotx+"deg) rotateY("+roty+"deg) translate3d("+camerax+"px,"+cameray+"px,"+cameraz+"px)";
+
+    document.getElementById("player1").style.transform = "translate3d("+(playerx+100)+"px, "+(playery-100)+"px, "+(playerz+50)+"px) rotateY(-45deg)";
+
+
+    lastmovetime = timenow;
+
+}
+//+="<div id=\"plane3\"></div>";
+modechange();
+modechange();
+
+modechange();
+modechange();
+modechange();
+
+
+console.log(array_spaces);
+function onserface(distrance){
+
+    playerx;
+    playerz;
+    playery;
+    newplayery;
+    landed=false;
+    for (let i = 0; i < array_spaces.length; i++) {
+        if (array_spaces[i][1]==Math.floor((playerx+130)/300) && array_spaces[i][3]==Math.floor( (playerz+130)/300) && array_spaces[i][2]==Math.floor((playery+0)/300) && array_spaces[i][4]==0 )  {
+            landed=true;
+        };
+    }
+    if (landed) {
+        if (jumper<=0) {
+            jumper=0;
+        }
+        else{
+            cameray=newcameray;
+            playery=newplayery;
+        }
+    }
+    else{
+            cameray=newcameray;
+            playery=newplayery;
+    }
+
+
+    wallx=false;
+    for (let i = 0; i < array_spaces.length; i++) {
+        if (array_spaces[i][1]==Math.floor((playerx+130)/300) && array_spaces[i][3]==Math.floor( (playerz+130)/300) && array_spaces[i][2]==Math.floor((playery+0)/300) && array_spaces[i][4]==1 )  {
+            if ( Math.floor((playerz+130)/300-0.2)!=Math.floor((playerz+130)/300) ) {
+                wallx=true;
+            };
+        };
+    }
+    if (wallx==true){
+        if (cameraz>=newcameraz){
+            cameraz=newcameraz;
+            playerz=newplayerz;
+        }
+        else{}
+    }
+    else{cameraz=newcameraz;playerz=newplayerz;}
+
+    wally=false;
+    for (let i = 0; i < array_spaces.length; i++) {
+        if ((array_spaces[i][1])==Math.floor((playerx+130-300)/300) && array_spaces[i][3]==Math.floor( (playerz+130)/300) && array_spaces[i][2]==Math.floor((playery+0)/300) && array_spaces[i][4]==2 )  {
+            if ( Math.floor((playerx+130)/300-0.2)!=Math.floor((playerx+130)/300) ) {
+                wally=true;
+            };
+        };
+
+
+    }
+    if (wally==true){
+        if (playerx>=newplayerx){
+            camerax=newcamerax;
+            playerx=newplayerx;
+        }
+        else{}
+    }
+    else{camerax=newcamerax;playerx=newplayerx;}
+}
+
+
+</script>
+
+
+
+
+ 
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
